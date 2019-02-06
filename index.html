@@ -58,14 +58,19 @@
 								<div class="col-6 col-12-medium imp-medium">
 
 									<!-- Banner Image -->
-										<a href="https://saulack.github.io/Testing-Repo/threecolumn.html" class="bordered-feature-image">
+										<a href="https://saulack.github.io/Testing-Repo/threecolumn.html" onclick="eventLog();" class="bordered-feature-image">
 											<script type="text/javascript"> 
+											const eventLog = (event) => {
+												e.preventDefault();
+												console.log(event);
+												
 												DY.API(event, {
 													name: "testEvent",
 													properties: {
 														value: "testValue"
 													}
 												})
+											}
 												</script>
 											<img id="banner-img src="images/banner.jpg" alt="" />
 										</a>
