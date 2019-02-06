@@ -149,12 +149,21 @@
 					$this
 						.on('click', 'a', function(event) {
 
+							DY.API(event, {
+								name: "TEST_EVENT", 
+								properties: {
+									value: "some_value"
+								}
+							});
+
+
 							var $a = $(this),
 								href = $a.attr('href'),
 								target = $a.attr('target');
 
 							if (!href || href == '#' || href == '' || href == '#' + id)
 								return;
+
 
 							// Cancel original event.
 								event.preventDefault();
