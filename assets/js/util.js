@@ -91,7 +91,7 @@
 
 				// Class to toggle.
 					visibleClass: 'visible'
-
+					≈
 			}, userConfig);
 
 			// Expand "target" if it's not a jQuery object already.
@@ -149,22 +149,16 @@
 					$this
 						.on('click', 'a', function(event) {
 
-							DY.API(event, {
-								name: "TEST_EVENT", 
-								properties: {
-									value: "some_value"
-								}
-							});
-
-
+							
+							
 							var $a = $(this),
-								href = $a.attr('href'),
-								target = $a.attr('target');
-
+							href = $a.attr('href'),
+							target = $a.attr('target');
+							
 							if (!href || href == '#' || href == '' || href == '#' + id)
-								return;
-
-
+							return;
+							
+							
 							// Cancel original event.
 								event.preventDefault();
 								event.stopPropagation();
