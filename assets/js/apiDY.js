@@ -1,6 +1,8 @@
 var obj;
 function(event) {
+  debugger
     event.preventDefault();
+    event.stopPropagation();
      obj = {
         name: "Add To Cart",
         properties: {
@@ -9,8 +11,8 @@ function(event) {
             value: 12.34, // Total cart value
             currency: "any supported currency code", // For multiple currencies
             quantity: 2,
-          size: "M",
-          cart: [
+            size: "M",
+            cart: [
              {
                productId: "item-34454", // SKU exactly as in the product feed
                quantity: 1, // Must be a Int
@@ -23,7 +25,6 @@ function(event) {
                itemPrice: 12.34, //Must be a float
                size: "M", // Size is optional
              }]
-
         }
     }
 
