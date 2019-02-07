@@ -28,7 +28,7 @@ function DYAPICall(event) {
         }
     }
 
-console.log(obj);
+DYAPICall.API(event, obj)
 
 
 } 
