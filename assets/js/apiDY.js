@@ -1,7 +1,7 @@
 var obj;
 function DYAPICall(event) {
     event.preventDefault();
-    event.stopPropagation();
+    // event.stopPropagation();
      obj = {
         name: "Add To Cart",
         properties: {
