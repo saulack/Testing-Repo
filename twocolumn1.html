@@ -46,8 +46,9 @@
 			<form action="">
 				<input type="submit" name="addToCart" id="" onsubmit="DIYAPICall();"> 
 			</form>
-			<script>
-			let obj;
+			<script type="text/javascript">
+			var obj;
+
 				const DYAPICall = (event) => {
 					event.preventDefault();
 					obj = {
@@ -73,7 +74,7 @@
 							size: "M", // Size is optional
 							}
 						}
-					}
+					};
 					console.log(obj);
 					}; 
 			</script>
