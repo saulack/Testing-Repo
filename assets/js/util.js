@@ -91,7 +91,7 @@
 
 				// Class to toggle.
 					visibleClass: 'visible'
-					≈
+					
 			}, userConfig);
 
 			// Expand "target" if it's not a jQuery object already.
