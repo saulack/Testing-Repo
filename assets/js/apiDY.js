@@ -5,24 +5,24 @@ function DYAPICall(event) {
      obj = {
         name: "Add To Cart",
         properties: {
-            dyType: "add-to-cart-v1", // Do Not Change
+            dyType: "add-to-cart-v1",
             productId: "sku-4324-bg",
-            value: 12.34, // Total cart value
-            currency: "any supported currency code", // For multiple currencies
+            value: 12.34,
+            currency: "any supported currency code",
             quantity: 2,
             size: "M",
             cart: [
              {
-               productId: "item-34454", // SKU exactly as in the product feed
-               quantity: 1, // Must be a Int
-               itemPrice: 65.87, //Must be a float
-               size: "XL", // Size is optional
+               productId: "item-34454",
+               quantity: 1, 
+               itemPrice: 65.87, 
+               size: "XL", 
              },
              {
-               productId: "sku-4324-bg", // SKU exactly as in the product feed
-               quantity: 2, // Must be a Int
-               itemPrice: 12.34, //Must be a float
-               size: "M", // Size is optional
+               productId: "sku-4324-bg", 
+               quantity: 2, 
+               itemPrice: 12.34,
+               size: "M", 
              }]
         }
     }
