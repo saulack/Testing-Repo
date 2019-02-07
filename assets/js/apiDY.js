@@ -1,6 +1,5 @@
 var obj;
 function DYAPICall(event) {
-  debugger
     event.preventDefault();
     event.stopPropagation();
      obj = {
@@ -28,7 +27,7 @@ function DYAPICall(event) {
         }
     }
 
-DYAPICall.API(event, obj)
+DY.API(event, obj)
 
 
 } 
