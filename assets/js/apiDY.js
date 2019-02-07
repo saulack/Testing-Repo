@@ -1,7 +1,7 @@
 var obj;
 function DYAPICall(event) {
-    event.preventDefault();
-    // event.stopPropagation();
+    // event.preventDefault();
+    // // event.stopPropagation();
      obj = {
         name: "Add To Cart",
         properties: {
@@ -26,6 +26,7 @@ function DYAPICall(event) {
              }]
         }
     }
+    console.log(event, obj)
 
 DY.API(event, obj)
 
